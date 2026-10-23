@@ -1,0 +1,13 @@
+{
+  "id": "PS65",
+  "name": "MAKINO PS65",
+  "controller": "Pro P · FANUC 0i-MF",
+  "version": "1.0.0",
+  "entry": "machines/PS65/index.html",
+  "systems": 15,
+  "blocks": 120,
+  "pages": 167,
+  "source": "V210I-C1E-XG · PS65/PS105 · STD SPEC",
+  "description": "Sơ đồ hệ thống, Input/Output và tra cứu 167 trang tài liệu điện PS65/PS105. Đối chiếu tùy chọn theo máy thực tế.",
+  "engineVersion": 2
+}
