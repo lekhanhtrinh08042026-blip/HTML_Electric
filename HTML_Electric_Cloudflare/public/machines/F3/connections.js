@@ -3,7 +3,7 @@ V2DOCS.forEach(d=>d.image=IMAGE_URLS[d.image]||d.image);
 const baseBlock=block, baseRoute=route, baseNav=nav;
 
 crumbs=function(g,b){return `<div class="bar"><button data-go="machines">All Machine</button> / <button data-go="machine/F3/home">F3</button>${g?' / <button data-go="machine/F3/system/'+g.id+'">'+esc(g.title)+'</button>':''}${b?' / '+b.id:''}</div>`};
-nav=function(id){baseNav(id);N.insertAdjacentHTML('afterbegin','<button data-go="machines">← All Machine</button><div class="navhead">MAKINO · F3 / Pro6</div>')};
+nav=function(id){baseNav(id);N.insertAdjacentHTML('afterbegin','<button data-go="machines">← All Machine</button><div class="navhead">MAKINO F3 / Pro6</div>')};
 function machines(){nav('');V.innerHTML='<h1>All Machine</h1><p class="hint">Thư viện máy → Hệ thống → Khối chức năng → Trang điện</p><div class="panel" style="max-width:650px"><h2>MAKINO F3</h2><p>15 hệ thống · 128 khối chức năng · 185 trang tài liệu điện</p><p class="hint">Nhánh F3 đang triển khai. Nguồn tài liệu dùng chung F3/F5 Pro6; các tùy chọn phải đối chiếu cấu hình máy thực tế.</p><button class="btn primary" data-go="machine/F3/home">Mở máy F3 →</button></div><p class="hint" style="margin-top:20px">Các dòng máy khác sẽ được thêm thành nhánh riêng khi có bộ dữ liệu.</p>'}
 document.addEventListener('click',e=>{const target=e.target.closest('[data-go]');if(target){let r=target.dataset.go;if(/^(home|system\/|block\/)/.test(r)){e.preventDefault();e.stopImmediatePropagation();location.hash='machine/F3/'+r}}},true);
 

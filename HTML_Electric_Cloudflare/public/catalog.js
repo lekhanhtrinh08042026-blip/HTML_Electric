@@ -9,8 +9,12 @@ window.MACHINE_CATALOG = [
     "blocks": 128,
     "pages": 185,
     "source": "V2631I-C1E-YB · F3/F5 Pro6",
-    "description": "Sơ đồ hệ thống, Input/Output và tìm kiếm toàn bộ tài liệu điện.",
-    "engineVersion": 1
+    "description": "Tra cứu hệ thống, kết nối Input / Output và toàn bộ tài liệu điện F3 / F5 Pro6.",
+    "engineVersion": 1,
+    "family": "F-SERIES",
+    "photo": "assets/machines/f3.webp",
+    "drawing": "V2631I-C1E-YB",
+    "photoSource": "https://www.makino.com.sg/en-us/machine-technology/machines/vertical-machining-centers-3-axis-4-axis/f-series-f3"
   },
   {
     "id": "PS65",
@@ -22,8 +26,12 @@ window.MACHINE_CATALOG = [
     "blocks": 120,
     "pages": 167,
     "source": "V210I-C1E-XG · PS65/PS105 · STD SPEC",
-    "description": "Sơ đồ hệ thống, Input/Output và tra cứu 167 trang tài liệu điện PS65/PS105. Đối chiếu tùy chọn theo máy thực tế.",
-    "engineVersion": 2
+    "description": "Tra cứu hệ thống, kết nối Input / Output và toàn bộ tài liệu điện PS65 / PS105.",
+    "engineVersion": 2,
+    "family": "PS-SERIES",
+    "photo": "assets/machines/ps65.webp",
+    "drawing": "V210I-C1E-XG",
+    "photoSource": "https://www.makino.com.sg/en-us/machine-technology/machines/vertical-machining-centers-3-axis-4-axis/ps65"
   },
   {
     "id": "PS105",
@@ -35,7 +43,11 @@ window.MACHINE_CATALOG = [
     "blocks": 120,
     "pages": 167,
     "source": "V210I-C1E-XG · PS65/PS105 · STD SPEC",
-    "description": "Sơ đồ hệ thống, Input/Output và tra cứu 167 trang tài liệu điện PS65/PS105. Đối chiếu tùy chọn theo máy thực tế.",
-    "engineVersion": 2
+    "description": "Tra cứu hệ thống, kết nối Input / Output và toàn bộ tài liệu điện PS65 / PS105.",
+    "engineVersion": 2,
+    "family": "PS-SERIES",
+    "photo": "assets/machines/ps105.webp",
+    "drawing": "V210I-C1E-XG",
+    "photoSource": "https://www.makino.com.sg/en-us/machine-technology/machines/vertical-machining-centers-3-axis-4-axis/ps105"
   }
 ];

@@ -1,0 +1,9 @@
+/* One presentation contract for the catalogue and every machine model. */
+(()=>{
+ const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ const models=window.MACHINE_CATALOG||[],root=new URL('../',document.currentScript.src),asset=m=>new URL(m.photo,root).href;
+ const mark='<span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>';
+ function header(id){const m=models.find(x=>x.id===id);return `<a class="brand" href="${root.href}" aria-label="All Machine · Thư viện máy">${mark}<span>All Machine<small>THƯ VIỆN KỸ THUẬT MÁY</small></span></a><nav class="top-links" aria-label="Điều hướng chính"><a href="${root.href}#machines" ${!m?'aria-current="page"':''}>Thư viện máy</a>${m?`<a href="#home" aria-current="page">${esc(m.id)}</a><button class="share-button" data-action="share">Chia sẻ link <span aria-hidden="true">↗</span></button>`:`<a href="#guide">Cách tra cứu <span aria-hidden="true">↗</span></a>`}</nav>`}
+ function hero(id){const m=models.find(x=>x.id===id);if(!m)return '';return `<div class="machine-intro"><div class="machine-intro-copy"><p class="eyebrow">TRUNG TÂM TRA CỨU · ${esc(m.family)}</p><h1>${esc(m.name)}</h1><p class="machine-intro-text">Sơ đồ hệ thống, kết nối Input / Output và tài liệu điện của máy.</p><div class="machine-facts"><span><b>${m.systems}</b> hệ thống</span><span><b>${m.blocks}</b> khối chức năng</span><span><b>${m.pages}</b> trang điện</span></div><p class="model-control">${esc(m.controller)} <span>·</span> ${esc(m.drawing)}</p></div><figure><img src="${asset(m)}" alt="Máy ${esc(m.name)}" width="440" height="300"><figcaption>Ảnh máy: <a href="${esc(m.photoSource)}" target="_blank" rel="noopener">Makino</a></figcaption></figure></div>`}
+ window.MACHINE_BRAND={header,hero,asset,root,models};const head=document.querySelector('header');if(head)head.innerHTML=header(document.body.dataset.model);
+})();
