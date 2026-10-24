@@ -29,3 +29,23 @@ body>header{min-height:104px}
 .site-footer .brand.brand-makino>small{font-size:9px;letter-spacing:.1px}
 @media(max-width:850px){body>header{min-height:96px}.brand-makino .makino-wordmark{width:154px;height:53px}.brand.brand-makino>small{font-size:9px}}
 @media(max-width:600px){body>header{min-height:94px}.brand-makino .makino-wordmark{width:142px;height:49px}.brand.brand-makino>small{font-size:8px;letter-spacing:.15px}.catalog-hero .service-audience{font-size:16px!important}.catalog-hero .service-description{font-size:13px!important}.catalog-hero .service-description br{display:none}.site-footer .brand.brand-makino>small{font-size:9px}}
+/* Photo-led service banner: live typography over a cropped technical photograph. */
+.catalog-hero.service-photo-hero{display:block;isolation:isolate;position:relative;min-height:510px;padding:64px max(40px,calc((100vw - 1520px)/2));background:#050708;border:0;overflow:hidden}
+.service-photo-hero .service-hero-media{position:absolute;z-index:-2;inset:0 0 0 35%;overflow:hidden;background:#171c20}
+.service-hero-media svg{display:block;width:100%;height:100%;min-width:0}
+.service-photo-hero:after{content:'';position:absolute;z-index:-1;inset:0;background:linear-gradient(90deg,#030506 0%,#030506 30%,rgba(3,5,6,.96) 38%,rgba(3,5,6,.62) 49%,rgba(3,5,6,.07) 66%,rgba(3,5,6,.02) 100%);pointer-events:none}
+.service-photo-hero .catalog-hero-inner{position:relative;max-width:740px}
+.service-photo-hero .eyebrow{color:#6bafdc;font-size:10px;letter-spacing:2.6px;margin:0 0 28px}
+.service-photo-hero h1{margin:0 0 26px;line-height:1;color:#fff;font-weight:750;letter-spacing:-3px}
+.service-photo-hero .support-word{display:block;font-size:clamp(80px,7.4vw,142px);line-height:.95;letter-spacing:-4px;color:#fff}
+.service-photo-hero .support-role{display:flex;align-items:center;gap:17px;font-size:clamp(23px,2.1vw,37px);line-height:1.25;font-weight:400;letter-spacing:-.7px;color:#edf2f5;margin-top:20px}
+.service-photo-hero .role-dash{color:#0bb5d3;font-size:.9em;font-weight:400}
+.catalog-hero.service-photo-hero .service-description{color:#aab7c1!important;font-size:13px!important;line-height:1.7!important;letter-spacing:.15px;margin:0 0 30px!important}
+.service-photo-hero .hero-link{display:inline-flex;align-items:center;gap:36px;justify-content:space-between;border:2px solid #00a9c9;color:#34c3df;padding:12px 20px;text-decoration:none;font-size:11px;font-weight:650;letter-spacing:1.3px;min-height:47px;transition:background .15s,color .15s}
+.service-photo-hero .hero-link span{font-size:19px;line-height:1;color:inherit}
+.service-photo-hero .hero-link:hover{background:#00a9c9;color:#07141c}
+.service-photo-hero .hero-link:focus-visible{outline-color:white}
+@media(min-width:1600px){.catalog-hero.service-photo-hero{padding-top:70px;padding-bottom:70px;min-height:540px}}
+@media(max-width:1100px){.catalog-hero.service-photo-hero{padding:58px 32px;min-height:470px}.service-photo-hero .support-word{font-size:90px}.service-photo-hero .support-role{font-size:27px;gap:12px}.service-photo-hero .catalog-hero-inner{max-width:570px}.service-photo-hero .service-hero-media{left:32%}.service-photo-hero:after{background:linear-gradient(90deg,#030506 0%,#030506 28%,rgba(3,5,6,.9) 42%,rgba(3,5,6,.35) 65%,rgba(3,5,6,.05) 100%)}}
+@media(max-width:700px){.catalog-hero.service-photo-hero{min-height:595px;padding:40px 24px 290px}.service-photo-hero .catalog-hero-inner{max-width:100%}.service-photo-hero .eyebrow{font-size:9px;letter-spacing:1.8px;margin-bottom:24px}.service-photo-hero .support-word{font-size:clamp(58px,12.5vw,85px);letter-spacing:-2px}.service-photo-hero .support-role{font-size:clamp(19px,4vw,27px);gap:10px;letter-spacing:-.5px;margin-top:16px}.catalog-hero.service-photo-hero .service-description{font-size:11px!important;max-width:330px;margin-bottom:23px!important}.service-photo-hero .hero-link{font-size:10px;padding:10px 15px;min-height:44px;gap:32px}.service-photo-hero .service-hero-media{inset:auto 0 0;height:290px}.service-photo-hero:after{background:linear-gradient(180deg,#030506 0%,#030506 45%,rgba(3,5,6,.97) 49%,rgba(3,5,6,.35) 62%,rgba(3,5,6,0) 77%)}.service-photo-hero h1{margin-bottom:19px}}
+@media(prefers-reduced-motion:reduce){.service-photo-hero .hero-link{transition:none}}
