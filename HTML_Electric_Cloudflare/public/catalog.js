@@ -49,5 +49,22 @@ window.MACHINE_CATALOG = [
     "photo": "assets/machines/ps105.webp",
     "drawing": "V210I-C1E-XG",
     "photoSource": "https://www.makino.com.sg/en-us/machine-technology/machines/vertical-machining-centers-3-axis-4-axis/ps105"
+  },
+  {
+    "id": "PS155",
+    "name": "MAKINO PS155",
+    "controller": "Pro U · FANUC 0i-MF+",
+    "version": "1.0.0",
+    "entry": "machines/PS155/index.html",
+    "systems": 15,
+    "blocks": 127,
+    "pages": 189,
+    "source": "V360I-C1E-YC · PS155 · CE SPEC",
+    "description": "Tra cứu hệ thống, kết nối Input / Output và toàn bộ tài liệu điện PS155 Pro U.",
+    "engineVersion": 3,
+    "family": "PS-SERIES",
+    "photo": "assets/machines/ps155.webp",
+    "drawing": "V360I-C1E-YC",
+    "photoSource": "https://www.makino.com.sg/"
   }
 ];
