@@ -17,6 +17,25 @@ window.MACHINE_CATALOG = [
     "photoSource": "https://www.makino.com.sg/en-us/machine-technology/machines/vertical-machining-centers-3-axis-4-axis/f-series-f3"
   },
   {
+    "id": "F5",
+    "name": "MAKINO F5",
+    "controller": "Pro6 · FANUC 31i-MB",
+    "version": "1.0.0",
+    "entry": "machines/F5/index.html",
+    "systems": 15,
+    "blocks": 128,
+    "pages": 185,
+    "source": "V2631I-C1E-YB · F3/F5 Pro6 · CE SPEC",
+    "description": "Tra cứu hệ thống, kết nối Input / Output và tài liệu điện F5 Pro6.",
+    "engineVersion": 1,
+    "family": "F-SERIES",
+    "photo": "assets/machines/f5.webp",
+    "drawing": "V2631I-C1E-YB",
+    "photoSource": "https://www.makino.com.sg/en-us/machine-technology/machines/vertical-machining-centers-3-axis-4-axis/f-series-f5",
+    "sharedDataModel": "F3",
+    "pdf": "F3_F5_Pro6_Electrical.pdf"
+  },
+  {
     "id": "PS65",
     "name": "MAKINO PS65",
     "controller": "Pro P · FANUC 0i-MF",

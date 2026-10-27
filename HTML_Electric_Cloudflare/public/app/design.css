@@ -53,3 +53,6 @@ body>header{min-height:104px}
 /* Balanced catalogue for the four supported models. */
 @media(min-width:1440px){.machine-cards{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media(min-width:601px) and (max-width:1439px){.machine-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Five-model catalogue: consistent card widths in a three-plus-two desktop grid. */
+@media(min-width:1440px){.machine-cards{grid-template-columns:repeat(3,minmax(0,1fr))}}
